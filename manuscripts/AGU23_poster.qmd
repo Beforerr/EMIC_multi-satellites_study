@@ -1,0 +1,6 @@
+---
+title: AGU23 poster
+subtitle: SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere
+abstract: Relativistic electron scattering and precipitation by electromagnetic ion cyclotron (EMIC) waves is one of the key mechanisms for electron losses and radiation belt depletion. In this study we consider a unique event with >3 hours observations of relativistic electron precipitation by low-altitude ELFIN Cubesat. Combining ELFIN measurements and near-equatorial measurements of whistler-mode waves, we demonstrate that the combined effect of whistler-mode and EMIC waves should provide an effective electron flux depletion. However, this event is characterized by a series of strong plasma sheet injections observed by multiple equatorial satellites. These injections refill the outer radiation belt and do not allow EMIC driven losses to significantly reduce relativistic electron fluxes. We suggest that the series of injections penetrating to L~5-6 supplement the radiation belt fluxes and compensate EMIC-driven losses.
+author: Zijin Zhang
+---
