@@ -1,0 +1,11 @@
+D_EMIC_elfin:
+  type: polars.EagerPolarsDataset
+  filepath: data/03_primary/D_EMIC_elfin.csv
+  metadata:
+    description: diffusion coefficient calculated from ELFIN satellite data
+
+D_EMIC_est:
+  type: polars.EagerPolarsDataset
+  filepath: data/03_primary/Daa_b.csv
+  metadata:
+    description: diffusion coefficient calculated from analytical estimates

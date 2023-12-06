@@ -1,0 +1,112 @@
+---
+title: Relativistic electron flux decay and recovery
+subtitle: Relative role of EMIC waves, whistler-mode waves, and plasmasheet injections
+abstract: To investigate the importance of electron precipitation into the atmosphere due to chorus or electromagnetic ion cyclotron (EMIC) waves in depleting trapped relativistic electron fluxes in the outer radiation belt, we investigate a weak geomagnetic storm on 17 April 2021 with series of strong electron and ion injections from the plasma sheet and strong electron precipitation, During this event, data from various spacecraft were available (GOES, Van Allen Probes, ERG/ARASE, MMS, ELFIN, POES), enabling a detailed analysis of physical phenomena. We find that despite strong EMIC and chorus wave-driven electron precipitation in the outer radiation belt, trapped electron fluxes actually increased at 0.1-1.5 MeV. Theoretical estimates of electron quasi-linear pitch-angle and energy diffusion by chorus and EMIC waves, based on statistics of their wave power distribution, indicate that EMIC wave-driven losses could not deplete 0.1-1.5 MeV electron fluxes over the long run during this event, due to a sufficiently negative derivative of the electron phase space density in energy, allowing chorus wave-driven electron acceleration to overcome precipitation loss, with the help of significant electron injections from the plasma sheet. This case study emphasizes the importance of accurately modeling local electron energy phase space density gradients and injections to accurately forecast the dynamical evolution of trapped electron fluxes.
+author:
+  - name: Zijin Zhang
+    corresponding: true
+    email: zijin@ucla.edu
+    roles: [investigation, software, visualization]
+    affiliations:
+      - ref: ucla
+  - name: Anton Artemyev
+    orcid: 0000-0001-8823-4474
+    roles: [conceptualization, writing]
+    affiliations:
+      - ref: ucla
+  - name: Didier Mourenas
+    orcid: 0000-0002-8413-6882
+    roles: writing
+    affiliations:
+      - ref: cea
+      - ref: lmce
+  - name: Vassilis Angelopoulos
+    affiliations:
+      - ref: ucla
+  - name: Xiao-Jia Zhang
+    affiliations:
+      - ref: utd
+      - ref: ucla
+draft: true
+bibliography: references.bib
+---
+
+## Introduction
+
+Relativistic electron flux dynamics in the Earth’s inner magnetosphere are largely controlled by electron scattering into the atmosphere via resonant interactions with whistler-mode and electromagnetic ion cyclotron (EMIC) waves \cite{Millan&Thorne07, Summers07:rates,Shprits08:JASTP_local}. Near the loss-cone, electron scattering rates for EMIC waves are much larger than for whistler-mode waves \cite<e.g.,>{Glauert&Horne05,Summers07:rates,Ni15} and, thus, EMIC wave-driven electron precipitation is often considered as the main (spatially localized) loss mechanism for relativistic electrons with an energy exceeding the minimum energy for cyclotron resonance with such waves, $E_{\min}\sim 0.5-1$MeV \cite{Summers&Thorne03,Summers07:theory,Usanova14}. Series of numerical simulations of the outer radiation belt dynamics \cite{Ma15,Shprits16,Drozdov17} and data/model comparison \cite{Shprits17,Kim21:emic,Drozdov22:dropout,Adair22,Angelopoulos23:SSR} have demonstrated that EMIC waves may quickly scatter relativistic electrons and contribute to the depletion of their flux in the outer radiation belt. 
+
+
+## Spacecrafts and Dataset
+
+- At $\sim$ 01:15 UT ERG observed strong electron injections likely supporting whistler-mode wave generation (the onset of whistler-mode chorus waves  coincides with this injection)
+- At 01:30-02:30 UT GOES16\&17 observed strong ion injections that arrived at ELFIN's MLT ($\sim16.5$) around 02:30-03:00 UT (based on ion azimuthal drift estimates) and should have driven EMIC wave generation
+- At 02:40-06:00 UT ELFIN observed continuous precipitation of relativistic electrons at MLT$\sim 16$; NOAA/POES observations suggest precipitations are located right at the inner edge of the ion plasma sheet; to support such precipitations by EMIC waves, whistler-mode waves recorded by ERG (at MLT $\sim 20$) should continuously scatter relativistic electrons from higher equatorial pitch-angles into the pitch-angle range resonating with EMIC waves
+- At 07:10-07:30 UT ERG and GOES16\&17 observed a strong electron injection: dispersionless on ERG (MLT $\sim 20$) and dispersive on GOES 17 (MLT $\sim4$); This injection appears to restore electron fluxes and to largely compensate losses from EMIC wave-driven scattering, at least at $E\leq1.5$ MeV
+
+::: {#fig-orbit_multi_mission_conjunctions}
+![](figures/fig1_orbit_multi_mission_conjunctions)
+
+(top) An overview of the mission orbits recorded on April 17, 2021, from 00:00 to 12:00 UTC. The orbits of the distinct missions are projected onto the MLT and $L$-shell plane, designated with different colors; star markers denote the orbit start, squares indicate their termination, and time annotations are provided near the periods of interest. ELFIN-B's trajectory is displayed during three time intervals: 02:42-02:46, 04:14-04:18, and 05:47-05:51 UT. NOAA-19's trajectory is plotted for 01:47-01:52 and 03:30-03:36 UT, while NOAA-15's is displayed at 01:15-01:20 and 02:58-03:03 UT. The trajectories of GOES, MMS, and Arase span the entire 12-hour interval from 00:00 to 12:00 UT. (bottom) $Sym-H$ and SME indices during this event.
+
+:::
+
+::: {#fig-goes}
+
+![](figures/GOES/goes_mpsh_poster)
+
+GOES-R electron and proton flux observations (70 keV to $\sim$ 1 MeV) from two geostationary operational satellites. Ion injections are seen from 2 UT (right when ELFIN starts observing EMIC wave-driven precipitation) to 8 UT. Series of strong electron injections are observed around 07:10-07:30 UT at MLT$\sim6-8$ after drifting from midnight.
+
+:::
+
+::: {#fig-mms}
+
+![](figures/MMS/mms_epd_poster)
+
+MMS electron and proton flux observations ($\sim 50$ keV to $\sim 500$ keV). A localized decrease of electron fluxes is notable around the time of ELFIN observations of EMIC wave-driven electron precipitations (around 04:30 UT, at MLT $\sim 16$).
+
+:::
+
+
+::: {#fig-arase}
+![](figures/ARASE/arase_mep_poster)
+
+ERG(Arase) electron and proton flux observations ($\sim$ 10 keV to $\sim$ 120 keV). Strong electron injections are visible at the beginning of EMIC wave-driven electron precipitation and at the end of the time interval.
+
+:::
+
+::: {#fig-elfin_j_ratio}
+![](figures/fig_elfin_j_ratio)
+
+Two ELFIN CubeSats observations of EMIC wave-driven electron precipitation, where the precipitating flux reaches the trapped flux in high-energy channels, over an interval exceeding three hours, from 02:42 to 05:53 UT. The locations are projected to the equatorial L-Shell and MLT, using the \citeA{Tsyganenko89} magnetic field model. Panels (a), (b), and (d) show data from ELFIN-B, while panel (c) features observations from ELFIN-A.
+
+:::
+
+
+::: {#fig-Daa_EMIC}
+![](figures/fig_Daa)
+
+Panel (a) Diffusion rates $D_{\alpha\alpha}$ of electrons near the loss-cone inferred, using Equation 2, from ELFIN measurements of precipitating and trapped electron fluxes in the dusk sector near 16 MLT, at $L=5$ (solid red) and $L=6$ (solid black) as a function of electron energy $E$. Diffusion rates $D_{\alpha\alpha}$ near the loss-cone evaluated based on analytical estimates for H-band EMIC waves with typical wave and plasma parameters at $L=5$ (red) and $L=6$ (black) in a noon-dusk plasmaspheric plume, as a function of energy $E$ are shown for a typical ratio $f_{pe}/f_{ce}=20$, a peak wave amplitude of $B_w=0.5$ nT at $\omega_{\text{EMIC}}/\Omega_{cp}\sim 0.4$, and a (minimum) frequency $\omega_{\text{EMIC}}/\Omega_{cp}\sim 0.45$ for cyclotron resonance with $\sim2$ MeV electrons (dashed lines). (b) Same as (a) with analytical estimates of $D_{\alpha\alpha}$ shown for H-band EMIC waves with a peak wave amplitude of $B_w=0.5$ nT at $\omega_{\text{EMIC}}/\Omega_{cp}\sim 0.4$ and a (minimum) frequency $\omega_{\text{EMIC}}/\Omega_{cp}\sim 0.7$ for cyclotron resonance with $\sim0.75$ MeV electrons (dashed lines).
+
+:::
+
+::: {#fig-Dch}
+![](figures/fig_Dch)
+
+Chorus wave-driven electron quasi-linear pitch-angle and energy diffusion rates $D_{\alpha\alpha}(CH)$ and $D_{EE}(CH)/E^2$ as a function of energy at $L=5-6$, MLT-averaged based on ERG chorus wave data during this event (assuming a typical MLT distribution of chorus power, see {Agapitov18:jgr}), adopting an empirical plasma density model outside the plasmasphere. Here, chorus wave power is assumed constant at latitudes $\sim0^\circ-30^\circ$ to first order.
+
+:::
+
+::: {#fig-trap_flux}
+![](figures/fig_trap_flux)
+
+Panel (a) Trapped electron flux energy spectra $J(\alpha_0=90^\circ, E)$ (black to magenta curves) measured by ERG near the magnetic equator at different times on April 17, 2021, and projected to the equator by assuming a typical shape $J(\alpha_0=90^\circ)/J(\alpha_0)\approx 1/\sin\alpha_0$, with $\sin\alpha_0\approx (B(\lambda=0^\circ)/B(\lambda))^{1/2}$ and $B(\lambda)$ the geomagnetic field strength at the latitude of measurement. The approximate steady-state spectrum shape $J_{UL}(E)$ expected to be reached asymptotically in time in the presence of both EMIC and chorus wave-driven pitch-angle and energy diffusion is also shown (blue curve), normalized at the measured flux level at 100 keV and 10:30 UT. (b) Same as (a) but showing trapped electron flux energy spectra $J(\alpha_0=90^\circ, E)$ (black to magenta curves) measured by ELFIN at low altitude at different times and projected to the equator. Two curves from panel (a) are reproduced for the sake comparison: $J(\alpha_0=90^\circ,E)$ inferred from ERG data at 10:30 UT (dashed blue) and $J_{UL}(E)$ normalized to ERG flux at 100 keV and 10:30 UT (solid blue). 
+
+:::
+
+
+## Discussion and Conclusions
+
+In this paper, we have investigated a particular event on 17 April 2021 characterized by series of strong electron and ion injections from the plasma sheet, significant electron precipitation by EMIC and whistler-mode chorus waves, and electron acceleration by chorus waves. During this event, GOES, Van Allen Probes, ERG (ARASE) and MMS spacecraft have measured waves and trapped particle fluxes at high altitude near the magnetic equator, while ELFIN and POES spacecraft have recorded trapped and precipitating particle fluxes at low altitude, providing sufficient data to enable a thorough analysis of the involved physical phenomena.
+
+
+Although ELFIN and POES measurements have shown that EMIC and chorus waves did efficiently precipitate $\sim0.1-1.5$ MeV electrons in the outer radiation belt during this event, trapped electron fluxes actually increased at nearly all energies. Combining theoretical estimates of electron quasi-linear pitch-angle and energy diffusion by chorus and EMIC waves with statistics of their wave power distribution, we have shown that long-lasting electron losses driven by EMIC waves may not deplete $\sim0.1-1.5$ MeV electron fluxes in the outer radiation belt over the long run ($>8$ hours) in the case of a sufficiently negative derivative $\partial f/\partial E<0$ of the electron PSD $f(E)$, because this negative PSD gradient can lead to a strong transport of low-energy injected electrons toward higher energy through efficient chorus wave-driven electron acceleration, more than compensating relativistic electron losses due to EMIC and chorus wave-driven precipitation into the atmosphere \cite{Mourenas22:ExtremeSpectra, Mourenas23} -- although a brief initial net loss at high energy can cause an early decrease of $\gtrsim 1$ MeV electron flux \cite{Mourenas16:grl}. In addition, electron injections from the plasma sheet, measured near $L\approx 7$ by GOES, may have been sufficiently strong after 7 UT to compensate electron losses due to wave-driven electron precipitation below $\sim1.5$ MeV at $L=5-6.5$, leading together with chorus wave-driven acceleration to a net increase of  relativistic elec tron fluxes. This case study therefore underlines the fact that strong EMIC and chorus wave-driven electron losses do not necessarily correspond to a simultaneous decrease of trapped electron fluxes. Both local electron energy PSD gradients and radial PSD gradients and injections can balance such wave-driven losses. Therefore, they should be included in global codes to accurately calculate the dynamical evolution of trapped fluxes.

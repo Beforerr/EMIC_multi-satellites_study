@@ -1,0 +1,30 @@
+name: cool_space_science
+channels:
+  - conda-forge
+dependencies:
+  - plasmapy
+  - sscws
+  - altair
+  - seaborn
+  - proplot
+  - pyviz::hvplot
+  - bokeh<3.0
+  - datashader
+  - pseudonetcdf
+  - pint
+  - scikit-learn
+  - nltk
+  - pdpipe
+
+  - jupyter
+  - fastai::nbdev
+  - fastai::fastcore
+
+  - pip
+  - pip:
+    - spacepy
+    - pyspedas @ git+https://github.com/spedas/pyspedas
+  - nodejs
+  - icecream
+
+  

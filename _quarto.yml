@@ -1,0 +1,41 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+  code-links: [repo]
+  notebooks: 
+    - notebook: manuscripts/AGU23_poster.qmd
+      title: AGU23 poster
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  # jats: default
+  # pdf: default
+
+execute:
+  freeze: true
+
+# citation:
+#   container-title: "JGR: Space Physics"
+#   type: article-journal
+
+affiliations:
+  - id: ucla
+    num: 1
+    name: University of California, Los Angeles
+    address: Department of Earth, Planetary, and Space Sciences, University of California, Los Angeles
+  - id: cea
+    num: 2
+    name: CEA, DAM, DIF
+    address: CEA, DAM, DIF, Arpajon, France
+  - id: lmce
+    name: Université Paris-Saclay
+    num: 3
+    address: Laboratoire Matière en Conditions Extrêmes, Université Paris-Saclay, CEA, Bruyères-le-Châtel, France
+  - id: utd
+    num: 4
+    name: University of Texas at Dallas
+    
