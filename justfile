@@ -11,7 +11,6 @@ publish:
 
 publish-poster:
   Rscript -e 'pagedown::chrome_print("manuscripts/.AGU23_poster.rmd")'
-  rm manuscripts/.AGU23_poster.html
 
 publish-qrcode:
   segno "https://beforerr.github.io/EMIC_multi-satellites_study/" -o=images/qrcode.png --light transparent --scale 10

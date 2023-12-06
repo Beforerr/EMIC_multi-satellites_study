@@ -45,9 +45,6 @@ Analysis of particle and wave data from multiple missions.
 
 ![](../figures/fig_elfin_j_ratio.png){width="60%"}
 
-![](../figures/fig_Daa.png){width="48%"}
-![](../figures/fig_Dch.png){width="48%"}
-
 ![](../figures/fig_trap_flux.png){width="60%"}
 
 - At $\sim$ 01:15 UT ERG observed strong electron injections likely supporting whistler-mode wave generation
