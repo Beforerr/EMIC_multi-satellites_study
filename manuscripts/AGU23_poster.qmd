@@ -1,6 +1,75 @@
 ---
-title: AGU23 poster
-subtitle: SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere
+pagetitle: AGU23 poster
+title: Relativistic electron flux decay and recovery
+subtitle: Relative role of EMIC waves, whistler-mode waves, and plasmasheet injections
 abstract: Relativistic electron scattering and precipitation by electromagnetic ion cyclotron (EMIC) waves is one of the key mechanisms for electron losses and radiation belt depletion. In this study we consider a unique event with >3 hours observations of relativistic electron precipitation by low-altitude ELFIN Cubesat. Combining ELFIN measurements and near-equatorial measurements of whistler-mode waves, we demonstrate that the combined effect of whistler-mode and EMIC waves should provide an effective electron flux depletion. However, this event is characterized by a series of strong plasma sheet injections observed by multiple equatorial satellites. These injections refill the outer radiation belt and do not allow EMIC driven losses to significantly reduce relativistic electron fluxes. We suggest that the series of injections penetrating to L~5-6 supplement the radiation belt fluxes and compensate EMIC-driven losses.
-author: Zijin Zhang
+author:
+  - name: Zijin Zhang
+    affiliations:
+      - ref: ucla
+    affil: 1
+  - name: Anton Artemyev
+    affiliations:
+      - ref: ucla
+    affil: 1
+  - name: Didier Mourenas
+    affiliations:
+      - ref: cea
+      - ref: lmce
+    affil: [2, 3]
+  - name: Vassilis Angelopoulos
+    affiliations:
+      - ref: ucla
+    affil: 1
+  - name: Xiao-Jia Zhang
+    affiliations:
+      - ref: utd
+      - ref: ucla
+    affil: [4, 1]
+affiliation:
+  - num: 1
+    address: Department of Earth, Planetary, and Space Sciences, University of California, Los Angeles
+  - num: 2
+    address: CEA, DAM, DIF, Arpajon, France
+  - num: 3
+    address: Laboratoire Matière en Conditions Extrêmes, Université Paris-Saclay, CEA, Bruyères-le-Châtel, France
+keywords: 
+- AGU23/SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere
+- poster
 ---
+
+## Main findings {.main_findings}
+
+Strong EMIC and chorus wave-driven electron losses do not necessarily correspond to a simultaneous decrease of trapped electron fluxes. Both local electron energy PSD gradients and radial PSD gradients and injections can balance such wave-driven losses.
+
+## Introduction & Motivation
+
+Relativistic electron flux dynamics in the Earth's inner magnetosphere are largely controlled by electron scattering into the atmosphere via resonant interactions with whistler-mode and electromagnetic ion cyclotron (EMIC) waves.
+
+ELFIN and POES spacecrafts recording trapped and precipitating particle fluxes at low altitude, together GOES, Van Allen Probes, ERG (ARASE) and MMS spacecrafts measuring waves and trapped particle fluxes at high altitude, provide a unique opportunity to study the dynamics of relativistic electron fluxes and their relation to wave activity.
+
+## Method
+
+Analysis of particle and wave data from multiple missions.
+
+![](../figures/fig1_orbit_multi_mission_conjunctions)
+
+
+## Observations
+
+![](../figures/GOES/goes_mpsh_poster)
+
+![](../figures/ARASE/arase_mep_poster)
+
+![](../figures/fig_elfin_j_ratio)
+
+![](../figures/fig_Daa)
+
+![](../figures/fig_Dch)
+
+![](../figures/fig_trap_flux)
+
+- At $\sim$ 01:15 UT ERG observed strong electron injections likely supporting whistler-mode wave generation
+- At 01:30-02:30 UT GOES16\&17 observed strong ion injections that arrived at ELFIN's MLT driving EMIC wave generation
+- At 02:40-06:00 UT ELFIN observed continuous precipitation of relativistic electrons at MLT$\sim 16$; NOAA/POES observations suggest precipitations are located right at the inner edge of the ion plasma sheet; whistler-mode waves recorded by ERG (at MLT $\sim 20$) continuously scatter relativistic electrons from higher equatorial pitch-angles into the pitch-angle range resonating with EMIC waves
+- At 07:10-07:30 UT ERG and GOES16\&17 observed a strong electron injection: dispersionless on ERG (MLT $\sim 20$) and dispersive on GOES 17 (MLT $\sim4$); This injection appears to restore electron fluxes and to largely compensate losses from EMIC wave-driven scattering

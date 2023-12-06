@@ -35,6 +35,8 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     const resizeObserver = new window.ResizeObserver(
       throttle(() => {
         layoutMarginEls();
+
+        console.log(window.document.body.getBoundingClientRect());
         if (
           window.document.body.getBoundingClientRect().width < 990 &&
           isReaderMode()

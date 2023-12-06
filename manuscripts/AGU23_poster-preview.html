@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.4.519">
+    <meta name="generator" content="quarto-1.4.518">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <meta name="author" content="Zijin Zhang">
+    <meta name="author" content="Anton Artemyev">
+    <meta name="author" content="Didier Mourenas">
+    <meta name="author" content="Vassilis Angelopoulos">
+    <meta name="author" content="Xiao-Jia Zhang">
+    <meta name="keywords" content="AGU23/SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere, poster">
 
     <title>AGU23 poster</title>
     <style>
@@ -123,12 +128,15 @@
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
      <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>  
+</script>   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
       </head>
 
   <body class="quarto-notebook">
@@ -143,20 +151,63 @@
      <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">AGU23 poster</h1>
-            <p class="subtitle lead">SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere</p>
+      <h1 class="title">Relativistic electron flux decay and recovery</h1>
+            <p class="subtitle lead">Relative role of EMIC waves, whistler-mode waves, and plasmasheet injections</p>
           </div>
 
     
     <div class="quarto-title-meta-container">
       <div class="quarto-title-meta-column-start">
             <div class="quarto-title-meta-author">
-          <div class="quarto-title-meta-heading">Author</div>
+          <div class="quarto-title-meta-heading">Authors</div>
           <div class="quarto-title-meta-heading">Affiliations</div>
           
                 <div class="quarto-title-meta-contents">
             <p class="author">Zijin Zhang </p>
           </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of California, Los Angeles
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Anton Artemyev </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of California, Los Angeles
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Didier Mourenas </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        CEA, DAM, DIF
+                      </p>
+                    <p class="affiliation">
+                        Université Paris-Saclay
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Vassilis Angelopoulos </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of California, Los Angeles
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Xiao-Jia Zhang </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of Texas at Dallas
+                      </p>
+                    <p class="affiliation">
+                        University of California, Los Angeles
+                      </p>
+                  </div>
                     </div>
         
         <div class="quarto-title-meta">
@@ -177,18 +228,61 @@
       </div>
     </div>
 
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>AGU23/SM017 - Nonlinear and Non-resonant Wave-Particle Interactions in the Earth’s Magnetosphere, poster</p>
+      </div>
+    </div>
 
     <div class="quarto-other-links-text-target">
     </div>  </div>
 </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#main-findings" id="toc-main-findings" class="nav-link active" data-scroll-target="#main-findings">Main findings</a></li>
+  <li><a href="#introduction-motivation" id="toc-introduction-motivation" class="nav-link" data-scroll-target="#introduction-motivation">Introduction &amp; Motivation</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">Observations</a></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-     
+       <section id="main-findings" class="level2 main_findings">
+<h2 class="main_findings anchored" data-anchor-id="main-findings">Main findings</h2>
+<p>Strong EMIC and chorus wave-driven electron losses do not necessarily correspond to a simultaneous decrease of trapped electron fluxes. Both local electron energy PSD gradients and radial PSD gradients and injections can balance such wave-driven losses.</p>
+</section>
+<section id="introduction-motivation" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-motivation">Introduction &amp; Motivation</h2>
+<p>Relativistic electron flux dynamics in the Earth’s inner magnetosphere are largely controlled by electron scattering into the atmosphere via resonant interactions with whistler-mode and electromagnetic ion cyclotron (EMIC) waves.</p>
+<p>ELFIN and POES spacecrafts recording trapped and precipitating particle fluxes at low altitude, together GOES, Van Allen Probes, ERG (ARASE) and MMS spacecrafts measuring waves and trapped particle fluxes at high altitude, provide a unique opportunity to study the dynamics of relativistic electron fluxes and their relation to wave activity.</p>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>Analysis of particle and wave data from multiple missions.</p>
+<p><a href="../figures/fig1_orbit_multi_mission_conjunctions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../figures/fig1_orbit_multi_mission_conjunctions.png" class="img-fluid"></a></p>
+</section>
+<section id="observations" class="level2">
+<h2 class="anchored" data-anchor-id="observations">Observations</h2>
+<p><a href="../figures/GOES/goes_mpsh_poster.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../figures/GOES/goes_mpsh_poster.png" class="img-fluid"></a></p>
+<p><a href="../figures/ARASE/arase_mep_poster.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../figures/ARASE/arase_mep_poster.png" class="img-fluid"></a></p>
+<p><a href="../figures/fig_elfin_j_ratio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../figures/fig_elfin_j_ratio.png" class="img-fluid"></a></p>
+<p><a href="../figures/fig_Daa.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../figures/fig_Daa.png" class="img-fluid"></a></p>
+<p><a href="../figures/fig_Dch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../figures/fig_Dch.png" class="img-fluid"></a></p>
+<p><a href="../figures/fig_trap_flux.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../figures/fig_trap_flux.png" class="img-fluid"></a></p>
+<ul>
+<li>At <span class="math inline">\(\sim\)</span> 01:15 UT ERG observed strong electron injections likely supporting whistler-mode wave generation</li>
+<li>At 01:30-02:30 UT GOES16&amp;17 observed strong ion injections that arrived at ELFIN’s MLT driving EMIC wave generation</li>
+<li>At 02:40-06:00 UT ELFIN observed continuous precipitation of relativistic electrons at MLT<span class="math inline">\(\sim 16\)</span>; NOAA/POES observations suggest precipitations are located right at the inner edge of the ion plasma sheet; whistler-mode waves recorded by ERG (at MLT <span class="math inline">\(\sim 20\)</span>) continuously scatter relativistic electrons from higher equatorial pitch-angles into the pitch-angle range resonating with EMIC waves</li>
+<li>At 07:10-07:30 UT ERG and GOES16&amp;17 observed a strong electron injection: dispersionless on ERG (MLT <span class="math inline">\(\sim 20\)</span>) and dispersive on GOES 17 (MLT <span class="math inline">\(\sim4\)</span>); This injection appears to restore electron fluxes and to largely compensate losses from EMIC wave-driven scattering</li>
+</ul>
+</section>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -586,6 +680,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content --> 
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});</script> 
   
 </body></html>
