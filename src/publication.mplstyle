@@ -1,0 +1,6 @@
+# Matplotlib style for publication
+
+savefig.transparent: True
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
