@@ -1,6 +1,6 @@
 /_manuscript
 *_files/
-
+.vscode
 *.html
 
 data/
