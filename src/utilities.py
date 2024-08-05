@@ -3,10 +3,18 @@ import proplot as pplt
 import altair as alt
 import pdpipe as pdp
 import numpy as np
+import xarray as xr
 import glob
 import pyspedas
 from pytplot import (get_data, options, split_vec, store_data, tplot,
                      tplot_options)
+
+def label_formatter(da: xr.DataArray):
+    if "units" in da.attrs.keys() and da.units != "":
+        return f"{da.long_name} ({da.units})"
+    else:
+        return da.long_name
+
 
 def plot_erg_orb(df: pd.DataFrame, backend="proplot"):
 

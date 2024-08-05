@@ -1,8 +1,5 @@
-env-install:
-	mamba env create --file environment.yml
-
-env-update:
-	mamba env update --file environment.yml
+ensure_env:
+   pixi install
 
 publish:
 	nbqa isort nbs/*.ipynb

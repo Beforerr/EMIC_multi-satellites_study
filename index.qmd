@@ -28,7 +28,6 @@ author:
       - ref: utd
       - ref: ucla
 draft: true
-bibliography: references.bib
 ---
 
 ## Introduction

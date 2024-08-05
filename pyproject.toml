@@ -1,0 +1,37 @@
+[project]
+name = "elfin_emics"
+version = "0.1.0"
+authors = [{ name = "Beforerr", email = "zzj956959688@gmail.com" }]
+requires-python = ">= 3.10, < 3.12"
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pixi.project]
+channels = ["pyviz", "conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.dependencies]
+jupyter = "*"
+plasmapy = "*"
+proplot = "*"
+intake = "*"
+xarray = "*"
+scipy = "*"
+sscws = "*"
+netcdf4 = "*"
+pytables = "*"   # for `pyspedas`
+
+altair = "*"
+seaborn = "*"
+hvplot = "*"
+panel = "*"
+
+[tool.pixi.pypi-dependencies]
+elfin_emics = { path = ".", editable = true }
+beforerr = "*"
+pyspedas = "*"
+spacepy = "*"
+pdpipe = "*"
