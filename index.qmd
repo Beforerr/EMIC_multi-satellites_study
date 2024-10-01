@@ -1,6 +1,6 @@
 ---
 title: Relativistic electron flux decay and recovery
-subtitle: Relative role of EMIC waves, chorus waves, and electron injections
+subtitle: relative roles of EMIC waves, chorus waves, and electron injections
 abstract: "We investigate the dynamics of relativistic electrons in the Earth's outer radiation belt by analyzing the interplay of several key physical processes: electron losses due to pitch angle scattering from electromagnetic ion cyclotron (EMIC) waves and chorus waves, and electron flux increases from chorus wave-driven acceleration of ~100-300 keV seed electrons injected from the plasma sheet. We examine a weak geomagnetic storm on April 17, 2021, using observations from various spacecraft, including GOES, Van Allen Probes, ERG/ARASE, MMS, ELFIN, and POES. Despite strong EMIC- and chorus wave-driven electron precipitation in the outer radiation belt, trapped 0.1-1.5 MeV electron fluxes actually increased. We use theoretical estimates of electron quasi-linear diffusion rates by chorus and EMIC waves, based on statistics of their wave power distribution, to examine the role of those waves in the observed relativistic electron flux variations. We find that a significant supply of 100-300 keV electrons by plasma sheet injections together with chorus wave-driven acceleration can overcome the rate of chorus and EMIC wave-driven electron losses through pitch angle scattering toward the loss cone, explaining the observed net increase in electron fluxes. Our study emphasizes the importance of simultaneously taking into account resonant wave-particle interactions and modeled local energy gradients of electron phase space density following injections, to accurately forecast the dynamical evolution of trapped electron fluxes."
 author:
   - name: Zijin Zhang
@@ -27,6 +27,24 @@ author:
     affiliations:
       - ref: utd
       - ref: ucla
+  - name: Satoshi Kasahara
+  - name: Yoshizumi Miyoshi
+  - name: Ayako Matsuoka
+  - name: Yoshiya Kasahara
+  - name: Takefumi Mitani
+  - name: Shoichiro Yokota
+  - name: Iku Shinohara
+  - name: Tomoaki Hori
+  - name: Kunihiro Keika
+    email: keika@eps.s.u-tokyo.ac.jp
+  - name: Takeshi Takashima
+    email: ttakeshi@stp.isas.jaxa.jp
+  - name: Mariko Teramoto
+    email: teramoto.mariko418@mail.kyutech.jp
+  - name: Shoya Matsuda
+    email: matsuda@staff.kanazawa-u.ac.jp
+  - name: Masahito Nose
+  - name: Iku Shinohara
 draft: true
 code-links: 
   - href: https://www.overleaf.com/project/6461db06fcc0575fa548cea5
@@ -34,6 +52,17 @@ code-links:
   - href: https://app.tana.inc?nodeid=DlbK-k2Xin
     text: Tana
 ---
+
+<!-- 
+- M. Teramoto, Kyushu institute of technology: MGF :
+teramoto.mariko418@mail.kyutech.jp
+- S. Matsuda, Kanazawa University: PWE/OFA :matsuda@staff.kanazawa-u.ac.jp -->
+
+## Key Points
+
+1. Multi-satellite observations of EMIC and chorus waves and injections are used to investigate their relative importance in electron dynamics.
+2. We show that chorus-driven acceleration during plasma sheet injections can overcome EMIC-driven losses.
+3. We develop an analytical model of relativistic electron flux variations subject to acceleration and losses.
 
 ## Introduction
 
