@@ -11,6 +11,10 @@ publish:
 	nbqa black nbs/*.ipynb
 	quarto publish gh-pages --no-prompt
 
+copy-figure:
+	#only copy the figures that are used in the manuscript
+	cp -r figures/fig* overleaf/draftfigures/
+
 publish-poster:
   Rscript -e 'pagedown::chrome_print("manuscripts/.AGU23_poster.rmd")'
 
