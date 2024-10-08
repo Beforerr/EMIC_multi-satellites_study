@@ -1,4 +1,9 @@
-ensure_env:
+import 'files/overleaf.just'
+
+default:
+   just --list
+
+ensure-env: clone-overleaf
    pixi install
 
 publish:
