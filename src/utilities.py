@@ -8,6 +8,9 @@ import glob
 import pyspedas
 from pytplot import (get_data, options, split_vec, store_data, tplot,
                      tplot_options)
+import unyt as un
+
+DEFAULT_FMTS = ('svg', 'pdf')
 
 def label_formatter(da: xr.DataArray):
     if "units" in da.attrs.keys() and da.units != "":
@@ -237,7 +240,6 @@ pipeline_filter_j = pdp.PdPipeline(
     ]
 )
 
-import unyt as un
 def unit_df(raw_df: pd.DataFrame) -> pd.DataFrame:
     r"""
     Converts the DataFrame to unyt units
@@ -597,7 +599,7 @@ def get_poes_mep_pro(probe = "noaa19", trange = ["2021-04-17 01:47:00", "2021-04
     pyspedas.poes.sem(probe = probe, trange=trange, time_clip=True, varformat='l_igrf*')
 
     # assign coordinates mlt and l_igrf
-    mep_pro_flux = get_data('mep_pro_flux',xarray=True)
+    mep_pro_flux: xr.DataArray = get_data('mep_pro_flux',xarray=True)
     mep_pro_flux = mep_pro_flux.assign_coords({
         "mlt": ("time", get_data('mlt', xarray=True).data),
         "l_igrf": ("time", get_data('l_igrf', xarray=True).data, {"long_name": "L-shell"}),
@@ -610,7 +612,7 @@ def get_poes_mep_pro(probe = "noaa19", trange = ["2021-04-17 01:47:00", "2021-04
     return ds
 
 
-def plot_poes_mep_pro(probe = "noaa19", trange = ["2021-04-17 01:47:00", "2021-04-17 01:52:00"], save=False):
+def plot_poes_mep_pro(probe = "noaa19", trange = ["2021-04-17 01:47:00", "2021-04-17 01:52:00"], save=False, fmts=("pdf")):
 
     ds = get_poes_mep_pro(probe = probe, trange = trange)
     temp_ds = ds.sel(time=slice(*trange))
@@ -646,9 +648,9 @@ def plot_poes_mep_pro(probe = "noaa19", trange = ["2021-04-17 01:47:00", "2021-0
     )
 
     if save:
-        fname = f"../figures/{probe}_mep_pro_flux_{start_time} - {end_time}"
-        fig.savefig(fname+'.png')
-        fig.savefig(fname+'.svg')
+        fname = f"../figures/POES/{probe}_mep_pro_flux_{start_time} - {end_time}"
+        for fmt in fmts:
+            fig.savefig(fname+'.'+fmt)
     
     return fig
 
