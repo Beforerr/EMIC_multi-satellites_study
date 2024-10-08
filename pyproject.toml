@@ -2,7 +2,7 @@
 name = "elfin_emics"
 version = "0.1.0"
 authors = [{ name = "Beforerr", email = "zzj956959688@gmail.com" }]
-requires-python = ">= 3.10, < 3.12"
+requires-python = ">= 3.10"
 dependencies = [
     "xarray",
     "pyspedas",
@@ -20,11 +20,9 @@ platforms = ["osx-arm64"]
 jupyter = "*"
 plasmapy = "*"
 proplot = "*"
-intake = "*"
 scipy = "*"
 sscws = "*"
 netcdf4 = "*"
-pytables = "*"   # for `pyspedas`
 
 altair = "*"
 seaborn = "*"

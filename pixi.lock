@@ -1082,11 +1082,11 @@ packages:
   name: elfin-emics
   version: 0.1.0
   path: .
-  sha256: d1505b8049351b81f44d08f297e4ecc6362081ca162d82e9c25743380b14427c
+  sha256: 3b2b2e4091fcf636096d3e381c248cc86164ef22f0cc44709d3b5394f55cf26c
   requires_dist:
   - xarray
   - pyspedas
-  requires_python: '>=3.10,<3.12'
+  requires_python: '>=3.10'
   editable: true
 - kind: conda
   name: entrypoints
