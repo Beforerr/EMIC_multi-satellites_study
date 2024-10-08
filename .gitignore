@@ -15,7 +15,6 @@ _proc/
 /_site/
 
 .DS_Store
-.envrc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
