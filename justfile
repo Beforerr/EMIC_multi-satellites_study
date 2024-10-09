@@ -4,7 +4,7 @@ default:
    just --list
 
 ensure-env: clone-overleaf
-   pixi install
+   pixi install --frozen
 
 publish:
 	nbqa isort nbs/*.ipynb
