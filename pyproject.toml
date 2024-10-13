@@ -6,6 +6,9 @@ requires-python = ">= 3.10"
 dependencies = [
     "xarray",
     "pyspedas",
+    "beforerr",
+    "polars",
+    "scienceplots"
 ]
 
 [build-system]
@@ -19,11 +22,9 @@ platforms = ["osx-arm64"]
 [tool.pixi.dependencies]
 jupyter = "*"
 plasmapy = "*"
-proplot = "*"
 scipy = "*"
 sscws = "*"
 netcdf4 = "*"
-
 altair = "*"
 seaborn = "*"
 hvplot = "*"
@@ -32,6 +33,6 @@ unyt = "*"
 
 [tool.pixi.pypi-dependencies]
 elfin_emics = { path = ".", editable = true }
-beforerr = "*"
+proplot = { git = "https://github.com/cvanelteren/proplot.git", tag = "v0.9.91" }
 spacepy = "*"
 pdpipe = "*"
