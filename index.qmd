@@ -45,12 +45,6 @@ author:
     email: matsuda@staff.kanazawa-u.ac.jp
   - name: Masahito Nose
   - name: Iku Shinohara
-draft: true
-code-links: 
-  - href: https://www.overleaf.com/project/6461db06fcc0575fa548cea5
-    text: Overleaf
-  - href: https://app.tana.inc?nodeid=DlbK-k2Xin
-    text: Tana
 ---
 
 <!-- 
@@ -156,7 +150,3 @@ In this paper, we have investigated a particular event on 17 April 2021 characte
 
 
 Although ELFIN and POES measurements have shown that EMIC and chorus waves did efficiently precipitate $\sim0.1-1.5$ MeV electrons in the outer radiation belt during this event, trapped electron fluxes actually increased at nearly all energies. Combining theoretical estimates of electron quasi-linear pitch-angle and energy diffusion by chorus and EMIC waves with statistics of their wave power distribution, we have shown that long-lasting electron losses driven by EMIC waves may not deplete $\sim0.1-1.5$ MeV electron fluxes in the outer radiation belt over the long run ($>8$ hours) in the case of a sufficiently negative derivative $\partial f/\partial E<0$ of the electron PSD $f(E)$, because this negative PSD gradient can lead to a strong transport of low-energy injected electrons toward higher energy through efficient chorus wave-driven electron acceleration, more than compensating relativistic electron losses due to EMIC and chorus wave-driven precipitation into the atmosphere \cite{Mourenas22:ExtremeSpectra, Mourenas23} -- although a brief initial net loss at high energy can cause an early decrease of $\gtrsim 1$ MeV electron flux \cite{Mourenas16:grl}. In addition, electron injections from the plasma sheet, measured near $L\approx 7$ by GOES, may have been sufficiently strong after 7 UT to compensate electron losses due to wave-driven electron precipitation below $\sim1.5$ MeV at $L=5-6.5$, leading together with chorus wave-driven acceleration to a net increase of  relativistic elec tron fluxes. This case study therefore underlines the fact that strong EMIC and chorus wave-driven electron losses do not necessarily correspond to a simultaneous decrease of trapped electron fluxes. Both local electron energy PSD gradients and radial PSD gradients and injections can balance such wave-driven losses. Therefore, they should be included in global codes to accurately calculate the dynamical evolution of trapped fluxes.
-
-## References
-
-- @turnerMultipointObservationsEnergetic2017

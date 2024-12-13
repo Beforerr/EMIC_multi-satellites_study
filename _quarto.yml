@@ -4,7 +4,7 @@ project:
 manuscript:
   article: index.qmd
   code-links: [repo]
-  notebooks: 
+  notebooks:
     - notebook: manuscripts/AGU23_poster.qmd
       title: AGU23 poster
 
@@ -18,9 +18,15 @@ format:
 execute:
   freeze: true
 
-# citation:
-#   container-title: "JGR: Space Physics"
-#   type: article-journal
+date: "2024-12-13"
+doi: 10.1029/2024JA033174
+
+citation:
+  container-title: "Journal of Geophysical Research: Space Physics"
+  type: article-journal
+  issue: 12
+  volume: 129
+  page: e2024JA033174
 
 affiliations:
   - id: ucla
@@ -38,4 +44,3 @@ affiliations:
   - id: utd
     num: 4
     name: University of Texas at Dallas
-    
